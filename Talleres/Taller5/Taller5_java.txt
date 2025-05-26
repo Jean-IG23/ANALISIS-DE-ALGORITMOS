@@ -1,0 +1,13 @@
+public class Solucion {
+    public static void main(String[] args) {
+        int resultado = calcularResultado(10); // Se ajustar el valor según sea necesario
+        System.out.println("El resultado es: " + resultado);
+    }
+
+    public static int calcularResultado(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+        return 2 * calcularResultado(n - 1) + 1;
+    }
+}

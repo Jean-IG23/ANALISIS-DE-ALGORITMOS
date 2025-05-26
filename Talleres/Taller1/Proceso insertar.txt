@@ -1,0 +1,18 @@
+// Proceso insertar
+para i ← 2 hasta n hacer
+    x ← T[i]; j ← i - 1
+    mientras j > 0 y x < T[j] hacer
+        T[j + 1] ← T[j]
+        j ← j - 1
+    T[j + 1] ← x
+
+
+//Proceso de Seleccionar
+para i ← 1 hasta n - 1 hacer
+    minj ← i; minx ← T[i]
+    para j ← i + 1 hasta n hacer
+        si T[j] < minx entonces
+            minj ← j
+            minx ← T[j]
+    T[minj] ← T[i]
+    T[i] ← minx
