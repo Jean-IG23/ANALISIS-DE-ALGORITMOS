@@ -1,7 +1,7 @@
 # Bimestre 2 
 
 # 	Divide y vencerás
-09 81	12 34 w  x	y  z
+wx + yz
 981×1234 =  10!𝑤+𝑥 × 10!𝑦+𝑧
 = 10"𝑤𝑦+ 10! 𝑤𝑧+𝑥𝑦+𝑥𝑧
 ¿Es posible obtener wz + xy a costa de una sola multiplicación?
