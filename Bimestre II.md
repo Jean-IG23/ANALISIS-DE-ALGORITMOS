@@ -67,15 +67,10 @@ Finalmente
 Poseen una implementación ágil y de baja complejidad computacional.
 Son adecuados para abordar problemas de optimización combinatoria.
 No aseguran la obtención de una solución globalmente óptima en todos los casos.
-Operan siguiendo un enfoque heurístico basado en decisiones localmente óptimas en cada iteración, con el objetivo de aproximarse a una solución óptima global.
-
+Operan siguiendo un enfoque heurístico basado en decisiones localmente óptimas en cada iteración, con el objetivo de aproximarse a una solución óptima global
 <img width="718" height="392" alt="image" src="https://github.com/user-attachments/assets/7bc05b3a-72c4-4007-a159-d625a75cc3b9" />
-
-
 ## Ejemplo de Aplicación:
-
 Realizar un pago a un cliente utilizando la menor cantidad posible de monedas disponibles.
-
 ## Ventajas
 -Requieren una implementación sencilla y de bajo costo computacional.
 -Producen soluciones eficientes en tiempo y recursos para muchos casos 
@@ -91,14 +86,7 @@ Puede ser complejo definir una función de selección que asegure decisiones óp
 # 	Grafos
 
 Árbol de Recubrimiento Mínimo (Minimum Spanning Tree - MST)
-Un árbol de expansión (o recubrimiento) de un grafo no dirigido y conectado 
-𝐺
-=
-(
-𝑉
-,
-𝐸
-)
+Un árbol de expansión (o recubrimiento) de un grafo no dirigido y conectado  𝐺=(𝑉,𝐸)
 G=(V,E), con pesos asociados a sus aristas, es un subgrafo acíclico que incluye todos los vértices del grafo y cuya estructura forma un árbol.
 
 El costo total de dicho árbol se define como la suma de los pesos de las aristas que lo componen.
@@ -106,26 +94,14 @@ El costo total de dicho árbol se define como la suma de los pesos de las arista
 El problema consiste en encontrar el árbol de expansión con el costo mínimo posible, es decir, el árbol de expansión mínima del grafo 
 𝐺
 G.
-
 Este tipo de problema es ampliamente utilizado en el diseño óptimo de redes de comunicación, distribución de servicios, y estructuras de conectividad con mínima inversión de recursos.
 
 Definición técnica de grafo:
 Un grafo es una estructura matemática representada como 
-𝐺
-=
-(
-𝑉
-,
-𝐸
-)
-G=(V,E), donde:
-
-𝑉
-V es un conjunto finito de vértices (también llamados nodos), y
-
-𝐸
+𝐺=(𝑉,𝐸)
+G=(V,E), donde: 𝑉
+V es un conjunto finito de vértices (también llamados nodos), y 𝐸
 E es un conjunto de pares de vértices, conocidos como aristas (o enlaces), que pueden ser dirigidas o no dirigidas.
-
 Dependiendo del contexto, las aristas pueden tener pesos asociados, que representan costos, distancias o capacidades.
 
 <img width="1049" height="603" alt="image" src="https://github.com/user-attachments/assets/85e92f81-4dad-4db6-a355-e4e419f94356" />
@@ -161,16 +137,12 @@ Existe un tesoro con una cantidad desconocida pero fija de
 𝑥
 x lingotes de oro, ubicado en el punto A o B, pero no se conoce su ubicación exacta.
 
-Desplazarse desde el punto actual (O) hacia A o B toma 5 días, y cada noche un dragón sustrae 
-𝑦
+Desplazarse desde el punto actual (O) hacia A o B toma 5 días, y cada noche un dragón sustrae 𝑦
 y lingotes de oro del tesoro.
 
 Si permaneces 4 días adicionales en el punto de partida (O), podrás determinar con certeza la ubicación del tesoro mediante análisis computacional.
 
-Un elfo ofrece revelar de inmediato la ubicación del tesoro a cambio de una cantidad equivalente a lo que el dragón tomaría en 3 noches, es decir, 
-3
-𝑦
-3y lingotes de oro.
+Un elfo ofrece revelar de inmediato la ubicación del tesoro a cambio de una cantidad equivalente a lo que el dragón tomaría en 3 noches, es decir, 3𝑦 3y lingotes de oro.
 
 <img width="228" height="308" alt="image" src="https://github.com/user-attachments/assets/8fe0885f-2bb8-4169-a706-de6a043982e5" />
 
@@ -182,64 +154,15 @@ Utilizar una moneda (simulación de una variable aleatoria uniforme) para decidi
 ## Análisis de Resultados Posibles:
 Caso favorable (50% de probabilidad):
 Se acierta en la primera elección → el tesoro es hallado inmediatamente.
-→ Se pierden 5 días de viaje → el dragón sustrae 
-5
-𝑦
-5y lingotes.
-Ganancia: 
-𝑥
-−
-5
-𝑦
-x−5y
+→ Se pierden 5 días de viaje → el dragón sustrae 5𝑦 5y lingotes.Ganancia: 𝑥−5𝑦 x−5y
 
 ## Caso desfavorable (50% de probabilidad):
 Se erra en la primera elección → se requiere viajar al segundo destino.
 → Se pierden 10 días en total (5 de ida al lugar incorrecto + 5 al correcto).
 → El dragón sustrae 
-10
-𝑦
-10y lingotes.
-Ganancia: 
-𝑥
-−
-10
-𝑦
-x−10y
-
+10𝑦10y lingotes.Ganancia: 𝑥−10𝑦x−10y
 Valor Esperado del Beneficio (Esperanza Matemática):
-𝐸
-[
-𝐺
-𝑎
-𝑛
-𝑎
-𝑛
-𝑐
-𝑖
-𝑎
-]
-=
-0.5
-(
-𝑥
-−
-5
-𝑦
-)
-+
-0.5
-(
-𝑥
-−
-10
-𝑦
-)
-=
-𝑥
-−
-7.5
-𝑦
+𝐸[𝐺𝑎𝑛𝑎𝑛𝑐𝑖𝑎]=0.5(𝑥−5𝑦)+0.5(𝑥−10𝑦)=𝑥−7.5𝑦
 E[Ganancia]=0.5(x−5y)+0.5(x−10y)=x−7.5y
 
 # Contextualización Algorítmica:
@@ -298,7 +221,7 @@ Es una medida más conservadora y útil para establecer cotas superiores de rend
 
 <img width="756" height="288" alt="image" src="https://github.com/user-attachments/assets/84ada2ac-8568-4557-b676-85c4438324bd" />
 
- <img width="646" height="296" alt="image" src="https://github.com/user-attachments/assets/bcfbcb5c-5aba-4bed-a2fc-81ea4c1a6daf" />
+<img width="646" height="296" alt="image" src="https://github.com/user-attachments/assets/bcfbcb5c-5aba-4bed-a2fc-81ea4c1a6daf" />
 
 <img width="644" height="322" alt="image" src="https://github.com/user-attachments/assets/fc1fecf3-2d1c-4c7e-9ee2-dd6025f39af1" />
 
@@ -316,10 +239,6 @@ Debido a estas propiedades, los PRNG son ampliamente utilizados en algoritmos pr
 	𝑎, 𝑐, 𝑚	son constantes eteras elegidas cuidadosamente
 •	Ejemplo
 <img width="777" height="305" alt="image" src="https://github.com/user-attachments/assets/e6c3b66c-e21d-4a3f-8b31-328dae207fe5" />
-
-## Taller 
-![Imagen de WhatsApp 2025-06-23 a las 10 45 43_1ccea423](https://github.com/user-attachments/assets/6b48db33-a4e9-4b97-bd7a-042c7312bf9b)
-![Imagen de WhatsApp 2025-06-23 a las 10 45 43_1db9e59e](https://github.com/user-attachments/assets/28cd0ebe-d7f8-4081-a5d8-ab8cf3e0071b)
 
 ### Taller 
 Un algoritmo voraz es un tipo de estrategia algorítmica que construye una solución paso a paso, eligiendo en cada paso la opción que parece ser la mejor en ese momento, sin reconsiderar decisiones anteriores.
