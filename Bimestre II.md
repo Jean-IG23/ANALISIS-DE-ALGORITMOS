@@ -1,30 +1,44 @@
 # Bimestre 2 
 
-# 	Divide y vencerás
-wx + yz
-981×1234 =  10!𝑤+𝑥 × 10!𝑦+𝑧
-= 10"𝑤𝑦+ 10! 𝑤𝑧+𝑥𝑦+𝑥𝑧
-¿Es posible obtener wz + xy a costa de una sola multiplicación?
-Considere el producto
-𝑟 =  𝑤+𝑥 × 𝑦+𝑧  = 𝑤𝑦+  𝑤𝑧+𝑥𝑦  +𝑥𝑧
-𝑝 = 𝑤𝑦 = 09∗12 = 108
-𝑞 = 𝑥𝑧 = 81*34 = 2754
-𝑟 = (𝑤+𝑥)(𝑦+𝑧) = 90*46 = 4140
-Finalmente
-= 10"𝑤𝑦+ 10! 𝑤𝑧+𝑥𝑦+𝑥𝑧
-981×1234 = 10"𝑝+ 10! 𝑟−𝑝−𝑞+𝑞
-981×1234 = 10"(108)+ 10! 4140−108−2754  +2754
-= 1210554
-<img width="651" height="238" alt="image" src="https://github.com/user-attachments/assets/b2f18b90-60a0-4b8d-9aa9-e519b2b8e91f" />
+### Taller 
+Un algoritmo voraz es un tipo de estrategia algorítmica que construye una solución paso a paso, eligiendo en cada paso la opción que parece ser la mejor en ese momento, sin reconsiderar decisiones anteriores.
+-Es decir, toma decisiones locales óptimas esperando que conduzcan a una solución global óptima.
+S(suma Actual	x	s + x	S(conjunto )
+0	25	25	{25}
+25	25	50	{25,25}
+50	10	60	{25,25,10}
 
-# Busqueda Binaria 
-<img width="1110" height="577" alt="image" src="https://github.com/user-attachments/assets/596a3c6e-cff0-48e7-b28f-b208d948120a" />
+![image](https://github.com/user-attachments/assets/dab2dfb2-2218-4ebd-b9f3-1385203c3750)
 
-<img width="534" height="256" alt="image" src="https://github.com/user-attachments/assets/d98fe840-5265-45c4-b87e-3c711caba631" />
+### Taller 
+![image](https://github.com/user-attachments/assets/36b0ec14-cf41-4aeb-8631-d73407c62943)
 
-<img width="482" height="265" alt="image" src="https://github.com/user-attachments/assets/652bde4d-b20a-4f5c-b83a-81e0aaace90e" />
+## Medidas de Tiempo en Análisis de Algoritmos
+✦ Tiempo Promedio (Average-case Time Complexity):
+Aplica a algoritmos deterministas.
 
-# Ordenacion 
+Se refiere al tiempo medio de ejecución sobre todas las entradas de un tamaño dado, bajo una distribución de probabilidad asumida sobre las entradas.
+
+Útil cuando se conoce el perfil estadístico de los datos de entrada.
+
+✦ Tiempo Esperado (Expected Time Complexity):
+Aplica a algoritmos probabilísticos o aleatorizados.
+
+Se refiere al tiempo promedio de ejecución sobre una entrada fija, calculado en función de las elecciones aleatorias realizadas por el algoritmo durante su ejecución.
+
+✦ Tiempo Esperado en el Peor Caso (Expected Time in Worst Case):
+Considera el tiempo promedio esperado de ejecución sobre todas las posibles ejecuciones aleatorias, para la peor entrada posible.
+
+Es una medida más conservadora y útil para establecer cotas superiores de rendimiento.
+
+
+
+## Números Pseudoaleatorios
+Los números pseudoaleatorios son secuencias de valores generadas mediante algoritmos deterministas, conocidos como generadores de números pseudoaleatorios (PRNG, por sus siglas en inglés), que emulan el comportamiento estadístico de una fuente aleatoria real.
+
+Aunque estos números se producen mediante funciones matemáticas totalmente determinísticas, están diseñados para presentar propiedades estadísticas equivalentes a las de secuencias aleatorias verdaderas, tales como uniformidad, independencia y distribución predecible, dentro de ciertos límites.
+
+Debido a estas propiedades, los PRNG son ampliamente utilizados en algoritmos probabilísticos, métodos de Monte Carlo, simulación estocástica, criptoanálisis no crítico, y pruebas estadísticas, donde se requiere un comportamiento que aparente aleatoriedad sin necesidad de una fuente de entropía física.
 
 <img width="602" height="262" alt="image" src="https://github.com/user-attachments/assets/2f97e22d-31b8-4c9c-8a1a-4369ef2ef9c4" />
 
@@ -199,38 +213,7 @@ El análisis de complejidad temporal de algoritmos deterministas puede ser compl
 
 En contraste, los algoritmos probabilísticos suelen requerir análisis más sofisticados, pues implican calcular esperanzas matemáticas, probabilidades de error, o tiempos esperados de ejecución, que dependen tanto de la entrada como de las distribuciones de probabilidad asociadas a las elecciones aleatorias internas del algoritmo.
 
-## Medidas de Tiempo en Análisis de Algoritmos
-✦ Tiempo Promedio (Average-case Time Complexity):
-Aplica a algoritmos deterministas.
 
-Se refiere al tiempo medio de ejecución sobre todas las entradas de un tamaño dado, bajo una distribución de probabilidad asumida sobre las entradas.
-
-Útil cuando se conoce el perfil estadístico de los datos de entrada.
-
-✦ Tiempo Esperado (Expected Time Complexity):
-Aplica a algoritmos probabilísticos o aleatorizados.
-
-Se refiere al tiempo promedio de ejecución sobre una entrada fija, calculado en función de las elecciones aleatorias realizadas por el algoritmo durante su ejecución.
-
-✦ Tiempo Esperado en el Peor Caso (Expected Time in Worst Case):
-Considera el tiempo promedio esperado de ejecución sobre todas las posibles ejecuciones aleatorias, para la peor entrada posible.
-
-Es una medida más conservadora y útil para establecer cotas superiores de rendimiento.
-
-<img width="768" height="188" alt="image" src="https://github.com/user-attachments/assets/566fec95-624b-44ab-86e4-d84d1f808e5c" />
-
-<img width="756" height="288" alt="image" src="https://github.com/user-attachments/assets/84ada2ac-8568-4557-b676-85c4438324bd" />
-
-<img width="646" height="296" alt="image" src="https://github.com/user-attachments/assets/bcfbcb5c-5aba-4bed-a2fc-81ea4c1a6daf" />
-
-<img width="644" height="322" alt="image" src="https://github.com/user-attachments/assets/fc1fecf3-2d1c-4c7e-9ee2-dd6025f39af1" />
-
-## Números Pseudoaleatorios
-Los números pseudoaleatorios son secuencias de valores generadas mediante algoritmos deterministas, conocidos como generadores de números pseudoaleatorios (PRNG, por sus siglas en inglés), que emulan el comportamiento estadístico de una fuente aleatoria real.
-
-Aunque estos números se producen mediante funciones matemáticas totalmente determinísticas, están diseñados para presentar propiedades estadísticas equivalentes a las de secuencias aleatorias verdaderas, tales como uniformidad, independencia y distribución predecible, dentro de ciertos límites.
-
-Debido a estas propiedades, los PRNG son ampliamente utilizados en algoritmos probabilísticos, métodos de Monte Carlo, simulación estocástica, criptoanálisis no crítico, y pruebas estadísticas, donde se requiere un comportamiento que aparente aleatoriedad sin necesidad de una fuente de entropía física.
 
 ## Método del generador lineal congruencial:
 ✦ Es el método más utilizado y se basa en la siguiente fórmula recursiva:
@@ -240,17 +223,37 @@ Debido a estas propiedades, los PRNG son ampliamente utilizados en algoritmos pr
 •	Ejemplo
 <img width="777" height="305" alt="image" src="https://github.com/user-attachments/assets/e6c3b66c-e21d-4a3f-8b31-328dae207fe5" />
 
-### Taller 
-Un algoritmo voraz es un tipo de estrategia algorítmica que construye una solución paso a paso, eligiendo en cada paso la opción que parece ser la mejor en ese momento, sin reconsiderar decisiones anteriores.
--Es decir, toma decisiones locales óptimas esperando que conduzcan a una solución global óptima.
-S(suma Actual	x	s + x	S(conjunto )
-0	25	25	{25}
-25	25	50	{25,25}
-50	10	60	{25,25,10}
 
-![image](https://github.com/user-attachments/assets/dab2dfb2-2218-4ebd-b9f3-1385203c3750)
+# 	Divide y vencerás
+wx + yz
+981×1234 =  10!𝑤+𝑥 × 10!𝑦+𝑧
+= 10"𝑤𝑦+ 10! 𝑤𝑧+𝑥𝑦+𝑥𝑧
+¿Es posible obtener wz + xy a costa de una sola multiplicación?
+Considere el producto
+𝑟 =  𝑤+𝑥 × 𝑦+𝑧  = 𝑤𝑦+  𝑤𝑧+𝑥𝑦  +𝑥𝑧
+𝑝 = 𝑤𝑦 = 09∗12 = 108
+𝑞 = 𝑥𝑧 = 81*34 = 2754
+𝑟 = (𝑤+𝑥)(𝑦+𝑧) = 90*46 = 4140
+Finalmente
+= 10"𝑤𝑦+ 10! 𝑤𝑧+𝑥𝑦+𝑥𝑧
+981×1234 = 10"𝑝+ 10! 𝑟−𝑝−𝑞+𝑞
+981×1234 = 10"(108)+ 10! 4140−108−2754  +2754
+= 1210554
+<img width="651" height="238" alt="image" src="https://github.com/user-attachments/assets/b2f18b90-60a0-4b8d-9aa9-e519b2b8e91f" />
 
-Taller 
-![image](https://github.com/user-attachments/assets/36b0ec14-cf41-4aeb-8631-d73407c62943)
+# Busqueda Binaria 
+<img width="1110" height="577" alt="image" src="https://github.com/user-attachments/assets/596a3c6e-cff0-48e7-b28f-b208d948120a" />
 
+<img width="534" height="256" alt="image" src="https://github.com/user-attachments/assets/d98fe840-5265-45c4-b87e-3c711caba631" />
+
+<img width="482" height="265" alt="image" src="https://github.com/user-attachments/assets/652bde4d-b20a-4f5c-b83a-81e0aaace90e" />
+
+# Ordenacion 
+<img width="768" height="188" alt="image" src="https://github.com/user-attachments/assets/566fec95-624b-44ab-86e4-d84d1f808e5c" />
+
+<img width="756" height="288" alt="image" src="https://github.com/user-attachments/assets/84ada2ac-8568-4557-b676-85c4438324bd" />
+
+<img width="646" height="296" alt="image" src="https://github.com/user-attachments/assets/bcfbcb5c-5aba-4bed-a2fc-81ea4c1a6daf" />
+
+<img width="644" height="322" alt="image" src="https://github.com/user-attachments/assets/fc1fecf3-2d1c-4c7e-9ee2-dd6025f39af1" />
 
